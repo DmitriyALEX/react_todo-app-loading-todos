@@ -10,8 +10,6 @@ const ErrorNotifacations: React.FC<Props> = ({ isError }) => {
     useState<boolean>(false);
 
   return (
-    // {/* DON'T use conditional rendering to hide the notification */}
-    // {/* Add the 'hidden' class to hide the message smoothly */}
     <div
       data-cy="ErrorNotification"
       className={cn('notification is-danger is-light has-text-weight-normal', {
@@ -24,11 +22,11 @@ const ErrorNotifacations: React.FC<Props> = ({ isError }) => {
         className="delete"
         onClick={() => setIsCloseNotification(true)}
       />
-      {/* show only one message at a time */}
+      {/* TODO: show only one message at a time */}
 
       {isError}
-      {/* Unable to load todos
-      <br />
+      {/* TODO: */}
+      {/*
       Title should not be empty
       <br />
       Unable to add a todo

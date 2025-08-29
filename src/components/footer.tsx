@@ -10,13 +10,13 @@ const Footer: React.FC<Props> = ({ onSetfilterType }) => {
   const [selectedType, setSelectedType] = useState(FilterType.All);
 
   return (
-    //{/* Hide the footer if there are no todos */}
+    //{/* TODO: Hide the footer if there are no todos */}
     <footer className="todoapp__footer" data-cy="Footer">
       <span className="todo-count" data-cy="TodosCounter">
         3 items left
       </span>
 
-      {/* Active link should have the 'selected' class */}
+      {/* TODO: Active link should have the 'selected' class */}
       <nav className="filter" data-cy="Filter">
         <a
           href="#/"
@@ -61,7 +61,7 @@ const Footer: React.FC<Props> = ({ onSetfilterType }) => {
         </a>
       </nav>
 
-      {/* this button should be disabled if there are no completed todos */}
+      {/* TODO: this button should be disabled if there are no completed todos */}
       <button
         type="button"
         className="todoapp__clear-completed"
